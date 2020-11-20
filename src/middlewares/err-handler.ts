@@ -20,6 +20,8 @@ export const errorHandler = (
   //   return res.status(err.statusCode).send({ errors: err.serializeErrors() })
   // }
 
+  console.error(err)
+
   res.status(500).send({ errors: [{ message: 'Unknown Error' }] })
 }
 
