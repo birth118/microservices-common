@@ -1,14 +1,15 @@
-# Common libraries for Microservices ticketing
+# Common libraries for Microservices
 
-Errors
+errors/
 
-- cusomer error classes
+- custom error classes
 
-Events
+events/
 
-- Event definitions for ticketing and order
+- Event definitions for ticket and order service
+- Base class of listner and publisher
 
-Middlewares
+middlewares/
 
 - Express middlware
 - Request validation & authentication check
