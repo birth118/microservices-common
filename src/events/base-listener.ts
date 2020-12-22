@@ -12,7 +12,7 @@ export abstract class Listener<T extends Event> {
   abstract queueGroupName: string
   abstract onMessage(data: T['data'], msg: Message): void
 
-  private client: Stan // 'private' : only by contruct. Cannot be accessed from subclass
+  protected client: Stan // 'private' : only by contruct. Cannot be accessed from subclass
   protected ackWait: number = 5 * 1000 // 'protected' : subcalss able to define if like
 
   constructor(client: Stan) {
